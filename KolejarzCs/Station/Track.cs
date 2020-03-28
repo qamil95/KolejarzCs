@@ -2,5 +2,6 @@
 {
     class Track : StationElement
     {
+        int ID { get; }
     }
 }

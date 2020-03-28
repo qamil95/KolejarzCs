@@ -91,6 +91,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -101,6 +102,11 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Station\Station.cs" />
     <Compile Include="Station\StationElement.cs" />
     <Compile Include="Station\StationParser.cs" />
@@ -109,6 +115,1716 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\L1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\L2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\L3.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\L4.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\L5.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\L6.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\L7.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\L8.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\L9.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\L10.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\L11.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\L12.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\L13.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\L14.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\L15.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\L16.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\L17.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\L18.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\L19.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\L20.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\L21.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\L22.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\L23.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\L24.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\L25.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\L26.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\L27.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\L28.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\L29.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\L30.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\L31.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\L32.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\L33.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\L34.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\L35.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\L36.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\L37.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NR1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NR2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NR3.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NR4.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NR5.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NR6.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NR7.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NR8.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NR9.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SEMAFOR_DOL.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SEMAFOR_GORA.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR101.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR102.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR103.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR104.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR105.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR106.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR107.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR108.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR111.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR112.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR113.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR114.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR115.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR116.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR117.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR118.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR121.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR122.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR123.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR124.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR125.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR126.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR127.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR128.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR131.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR132.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR133.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR134.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR135.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR136.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR137.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR138.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR141.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR142.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR143.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR144.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR145.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR146.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR147.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR148.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR151.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR152.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR153.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR154.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR155.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR156.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR157.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR158.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR161.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR162.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR163.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR164.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR165.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR166.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR167.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR168.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR171.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR172.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR173.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR174.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR175.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR176.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR177.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR178.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR181.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR182.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR183.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR184.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR185.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR186.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR187.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR188.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR191.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR192.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR193.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR194.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR195.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR196.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR197.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR198.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR201.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR202.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR203.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR204.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR205.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR206.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR207.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR208.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR211.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR212.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR213.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR214.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR215.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR216.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR217.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR218.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR221.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR222.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR223.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR224.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR225.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR226.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR227.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR228.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR231.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR232.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR233.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR234.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR235.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR236.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR237.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR238.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR241.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR242.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR243.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR244.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR245.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR246.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR247.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR248.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR251.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR252.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR253.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR254.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR255.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR256.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR257.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR258.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR261.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR262.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR263.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR264.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR265.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR266.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR267.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR268.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR271.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR272.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR273.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR274.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR275.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR276.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR277.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR278.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR281.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR282.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR283.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR284.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR285.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR286.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR287.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR288.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR291.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR292.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR293.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR294.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR295.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR296.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR297.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR298.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR301.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR302.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR303.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR304.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR305.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR306.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR307.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR308.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR311.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR312.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR313.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR314.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR315.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR316.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR317.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR318.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR321.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR322.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR323.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR324.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR325.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR326.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR327.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR328.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR331.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR332.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR333.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR334.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR335.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR336.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR337.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR338.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR341.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR342.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR343.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR344.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR345.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR346.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR347.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR348.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR351.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR352.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR353.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR354.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR355.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR356.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR357.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR358.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR361.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR362.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR363.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR364.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR365.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR366.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR367.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR368.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR371.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR372.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR373.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR374.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR375.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR376.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR377.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR378.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR381.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR382.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR383.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR384.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR385.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR386.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR387.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR388.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR391.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR392.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR393.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR394.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR395.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR396.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR397.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR398.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR401.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR402.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR403.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR404.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR405.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR406.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR407.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR408.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR411.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR412.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR413.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR414.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR415.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR416.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR417.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR418.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR421.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR422.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR423.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR424.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR425.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR426.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR427.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR428.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR431.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR432.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR433.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR434.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR435.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR436.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR437.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR438.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR441.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR442.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR443.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR444.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR445.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR446.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR447.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR448.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR451.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR452.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR453.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR454.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR455.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR456.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR457.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR458.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR461.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR462.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR463.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR464.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR465.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR466.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR467.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR468.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR471.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR472.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR473.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR474.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR475.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR476.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR477.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR478.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR481.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR482.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR483.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR484.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR485.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR486.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR487.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR488.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR491.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR492.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR493.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR494.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR495.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR496.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR497.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR498.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR501.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR502.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR503.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR504.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR505.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR506.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR507.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR508.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR511.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR512.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR513.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR514.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR515.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR516.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR517.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR518.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR521.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR522.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR523.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR524.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR525.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR526.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR527.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR528.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR531.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR532.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR533.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR534.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR535.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR536.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR537.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR538.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR541.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR542.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR543.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR544.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR545.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR546.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR547.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR548.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR551.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR552.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR553.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR554.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR555.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR556.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR557.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR558.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR561.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR562.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR563.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR564.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR565.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR566.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR567.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR568.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR571.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR572.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR573.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR574.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR575.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR576.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR577.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR578.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR581.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR582.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR583.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR584.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR585.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR586.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR587.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR588.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR591.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR592.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR593.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR594.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR595.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR596.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR597.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR598.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR601.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR602.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR603.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR604.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR605.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR606.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR607.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR608.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR611.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR612.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR613.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR614.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR615.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR616.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR617.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR618.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR621.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR622.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR623.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR624.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR625.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR626.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR627.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR628.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR631.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR632.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR633.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR634.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR635.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR636.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR637.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR638.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR641.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR642.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR643.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR644.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR645.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR646.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR647.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR648.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR651.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR652.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR653.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR654.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR655.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR656.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR657.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR658.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR661.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR662.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR663.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR664.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR665.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR666.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR667.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR668.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR671.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR672.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR673.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR674.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR675.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR676.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR677.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR678.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR681.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR682.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR683.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR684.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR685.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR686.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR687.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR688.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR691.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR692.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR693.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR694.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR695.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR696.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR697.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR698.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR701.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR702.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR703.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR704.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR705.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR706.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR707.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR708.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR711.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR712.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR713.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR714.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR715.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR716.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR717.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR718.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR721.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR722.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR723.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR724.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR725.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR726.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR727.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR728.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR731.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR732.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR733.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR734.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR735.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR736.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR737.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR738.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR741.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR742.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR743.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR744.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR745.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR746.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR747.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TOR748.bmp" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
