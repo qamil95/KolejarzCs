@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{D1621242-95D5-4C10-83DE-5485D7DA0C8C}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>KolejarzPoc</RootNamespace>
-    <AssemblyName>KolejarzPoc</AssemblyName>
+    <RootNamespace>KolejarzCs</RootNamespace>
+    <AssemblyName>KolejarzCs</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -104,6 +104,7 @@
     <Compile Include="Station\Station.cs" />
     <Compile Include="Station\StationElement.cs" />
     <Compile Include="Station\StationParser.cs" />
+    <Compile Include="Station\Track.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
