@@ -8,7 +8,7 @@ namespace KolejarzCs.Station
 
         int Width { get; }
 
-        List<StationElement> StationElements { get; }
+        List<Element> StationElements { get; }
 
     }
 }

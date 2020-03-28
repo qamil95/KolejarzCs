@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace KolejarzCs.Station
 {
-    class StationElement
+    class Element
     {
+        int Type =>
     }
 }

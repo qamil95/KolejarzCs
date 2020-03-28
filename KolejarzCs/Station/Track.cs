@@ -1,7 +1,6 @@
 ﻿namespace KolejarzCs.Station
 {
-    class Track : StationElement
+    class Track : Element
     {
-        int ID { get; }
     }
 }

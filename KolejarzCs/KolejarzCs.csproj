@@ -107,10 +107,13 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="Station\ElementTypes.cs" />
     <Compile Include="Station\Station.cs" />
-    <Compile Include="Station\StationElement.cs" />
+    <Compile Include="Station\Element.cs" />
+    <Compile Include="Station\TrackTypes.cs" />
     <Compile Include="Station\StationParser.cs" />
     <Compile Include="Station\Track.cs" />
+    <Compile Include="TexturesLoader.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
