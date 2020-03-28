@@ -113,7 +113,6 @@
     <Compile Include="Station\TrackTypes.cs" />
     <Compile Include="Station\StationParser.cs" />
     <Compile Include="Station\Track.cs" />
-    <Compile Include="TexturesLoader.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

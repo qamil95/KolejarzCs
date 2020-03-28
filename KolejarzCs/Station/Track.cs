@@ -2,5 +2,6 @@
 {
     class Track : Element
     {
+        TrackTypes Type { get; }
     }
 }
