@@ -31,23 +31,51 @@ namespace KolejarzCs
             CircleShape shape = new CircleShape(100);
             shape.FillColor = Color.Green;
 
-            var rect = new RectangleShape(textureSize);
-            rect.Texture = new TexturesDictionary(new TexturesConverter()).GetTexture(DecorationTypes.LETTER_Ł);
 
-            window.Closed += Window_Closed;
+            var rectangleShapes = new List<RectangleShape>();
+            var textures = new TexturesDictionary(new TexturesConverter());
+
+
+            var position = new Vector2f();
+            foreach (var decoration in (DecorationTypes[])Enum.GetValues(typeof(DecorationTypes)))
+            {
+                var texture = textures.GetTexture(decoration);
+                var rect = new RectangleShape(textureSize);
+                rect.Texture = texture;
+                rect.Position = position;
+                position += new Vector2f(14, 0);
+                rectangleShapes.Add(rect);
+            }
+
+            position = new Vector2f(0, 14);
+            foreach (var track in (TrackTypes[])Enum.GetValues(typeof(TrackTypes)))
+            {
+                if (track == TrackTypes.EMPTY)
+                    continue;
+
+                foreach (var state in (TrackStates[])Enum.GetValues(typeof(TrackStates)))
+                {
+                    var texture = textures.GetTexture(track, state);
+                    var rect = new RectangleShape(textureSize);
+                    rect.Texture = texture;
+                    rect.Position = position;
+                    position += new Vector2f(0, 14);
+                    rectangleShapes.Add(rect);
+                }
+                position.Y = 14;
+                position += new Vector2f(14, 0);
+            }
+
+            window.Closed += (s, a) => window.Close();
 
             while (window.IsOpen)
             {
+                window.DispatchEvents();
                 window.Clear();
                 window.Draw(shape);
-                window.Draw(rect);
+                rectangleShapes.ForEach(x => window.Draw(x));
                 window.Display();
             }
-        }
-
-        private static void Window_Closed(object sender, EventArgs e)
-        {
-            (sender as Window).Close();
         }
     }
 }

@@ -1,6 +1,5 @@
 ﻿using KolejarzCs.Station;
 using SFML.Graphics;
-using System.Drawing;
 
 namespace KolejarzCs.Graphics
 {
@@ -15,8 +14,8 @@ namespace KolejarzCs.Graphics
 
         public Texture GetTexture(DecorationTypes type)
         {
-            string name = string.Empty;
             var id = (int)type;
+            string name;
             if (id > 0)
             {
                 name = $"NR{id}";
@@ -25,7 +24,7 @@ namespace KolejarzCs.Graphics
             {
                 name = $"L{-id}";
             }
-            
+
             return converter.CreateTextureUsingColorArray(name);
         }
 
