@@ -1,12 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace KolejarzCs.Station
 {
     class StationParser
     {
+        internal object Parse(List<string[]> readStation)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
