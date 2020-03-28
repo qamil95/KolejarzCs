@@ -1,7 +1,14 @@
-﻿namespace KolejarzCs.Station
+﻿using SFML.System;
+
+namespace KolejarzCs.Station
 {
     class Track : Element
     {
-        TrackTypes Type { get; }
+        private TrackTypes trackType;
+
+        public Track(Vector2i coordinates, TrackTypes trackType) : base (coordinates)
+        {
+            this.trackType = trackType;
+        }
     }
 }

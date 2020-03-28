@@ -1,7 +1,14 @@
-﻿namespace KolejarzCs.Station
+﻿using SFML.System;
+
+namespace KolejarzCs.Station
 {
-    class Element
+    abstract class Element
     {
-        ElementTypes Type { get; }
+        public Vector2i Coordinates;
+
+        public Element(Vector2i coordinates)
+        {
+            Coordinates = coordinates;
+        }
     }
 }
