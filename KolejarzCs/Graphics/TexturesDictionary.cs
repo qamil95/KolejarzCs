@@ -1,6 +1,6 @@
 ﻿using KolejarzCs.Station;
 using SFML.Graphics;
-using System;
+using System.Drawing;
 
 namespace KolejarzCs.Graphics
 {
@@ -15,12 +15,24 @@ namespace KolejarzCs.Graphics
 
         public Texture GetTexture(DecorationTypes type)
         {
-            throw new NotImplementedException();
+            string name = string.Empty;
+            var id = (int)type;
+            if (id > 0)
+            {
+                name = $"NR{id}";
+            }
+            else
+            {
+                name = $"L{-id}";
+            }
+            
+            return converter.CreateTextureUsingColorArray(name);
         }
 
         public Texture GetTexture(TrackTypes type, TrackStates state)
         {
-            throw new NotImplementedException();
+            var name = $"TOR{(int)type}{(int)state}";
+            return converter.CreateTextureUsingColorArray(name);
         }
     }
 }

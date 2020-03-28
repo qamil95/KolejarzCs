@@ -1,7 +1,8 @@
-﻿using KolejarzCs.Parsers;
-using KolejarzCs.Properties;
+﻿using KolejarzCs.Graphics;
+using KolejarzCs.Parsers;
 using KolejarzCs.Station;
 using SFML.Graphics;
+using SFML.System;
 using SFML.Window;
 using System;
 using System.Collections.Generic;
@@ -11,6 +12,8 @@ namespace KolejarzCs
 {
     class Program
     {
+        private static Vector2f textureSize = new Vector2f(14, 14);
+
         static void Main(string[] args)
         {
             var stationParser = new StationParser();
@@ -24,9 +27,12 @@ namespace KolejarzCs
 
 
 
-            RenderWindow window = new RenderWindow(new VideoMode(500, 500), "SFML works!");
+            RenderWindow window = new RenderWindow(new VideoMode(1000, 500), "SFML works!");
             CircleShape shape = new CircleShape(100);
-            shape.FillColor = SFML.Graphics.Color.Green;
+            shape.FillColor = Color.Green;
+
+            var rect = new RectangleShape(textureSize);
+            rect.Texture = new TexturesDictionary(new TexturesConverter()).GetTexture(DecorationTypes.LETTER_Ł);
 
             window.Closed += Window_Closed;
 
@@ -34,6 +40,7 @@ namespace KolejarzCs
             {
                 window.Clear();
                 window.Draw(shape);
+                window.Draw(rect);
                 window.Display();
             }
         }

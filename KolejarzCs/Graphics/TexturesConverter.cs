@@ -6,25 +6,27 @@ namespace KolejarzCs.Graphics
 {
     internal class TexturesConverter
     {
-        public Texture CreateTexture(Bitmap bmp)
+        public Texture CreateTextureUsingColorArray(string name)
         {
-            SFML.Graphics.Color[,] sfmlcolorarray = new SFML.Graphics.Color[bmp.Height, bmp.Width];
-            for (int x = 0; x < bmp.Width; x++)
+            var image = Properties.Resources.ResourceManager.GetObject(name) as Bitmap;
+            SFML.Graphics.Color[,] sfmlcolorarray = new SFML.Graphics.Color[image.Height, image.Width];
+            for (int x = 0; x < image.Width; x++)
             {
-                for (int y = 0; y < bmp.Height; y++)
+                for (int y = 0; y < image.Height; y++)
                 {
-                    System.Drawing.Color csharpcolor = bmp.GetPixel(x, y);
-                    sfmlcolorarray[y, x] = new SFML.Graphics.Color(csharpcolor.R, csharpcolor.G, csharpcolor.B, csharpcolor.A);
+                    System.Drawing.Color csharpcolor = image.GetPixel(x, y);
+                    sfmlcolorarray[x, y] = new SFML.Graphics.Color(csharpcolor.R, csharpcolor.G, csharpcolor.B, csharpcolor.A);
                 }
             }
             SFML.Graphics.Image newimage = new SFML.Graphics.Image(sfmlcolorarray);
             return new Texture(newimage);
         }
 
-        public Texture CreateTexture2(Bitmap Im)
+        public Texture CreateTextureUsingMemoryStream(string name)
         {
+            var image = Properties.Resources.ResourceManager.GetObject(name) as Bitmap;
             MemoryStream stm = new MemoryStream();
-            Im.Save(stm, System.Drawing.Imaging.ImageFormat.Bmp);
+            image.Save(stm, System.Drawing.Imaging.ImageFormat.Bmp);
             return new Texture(stm);
         }
     }
