@@ -4,7 +4,6 @@ using KolejarzCs.Station;
 using SFML.Graphics;
 using SFML.System;
 using SFML.Window;
-using System;
 using System.Collections.Generic;
 using System.IO;
 
@@ -14,10 +13,10 @@ namespace KolejarzCs
     {
         private static Vector2f textureSize = new Vector2f(14, 14);
 
-        //private static string stationFile = @"C:\Gry\Kolejarz\Stacje\Bobowa Miasto\Bobowam.stc";
-        private static string stationFile = @"C:\Gry\Kolejarz\Stacje\Bielsko Biała Gł\bbgl.stc";
+        private static string stationFile = @"C:\Gry\Kolejarz\Stacje\Bobowa Miasto\Bobowam.stc";
+        //private static string stationFile = @"C:\Gry\Kolejarz\Stacje\Bielsko Biała Gł\bbgl.stc";
         //private static string stationFile = @"C:\Gry\Kolejarz\Stacje\Warszawa Centralna\Warszawa.stc";
-        //private static string stationFile = @"C:\Gry\Kolejarz\Stacje\Bobowa Miasto\Bobowam.stc";
+        //private static string stationFile = @"C:\Gry\Kolejarz\Stacje\Kraków Pł\2003\Krakow Plaszow 2003.stc";
 
 
         // https://gist.github.com/trlewis/dbb709ecc88667714123
@@ -30,14 +29,9 @@ namespace KolejarzCs
             var splitStation = allLines.Split(new char [] {','});            
             var station = stationParser.Parse(splitStation);
 
-            RenderWindow window = new RenderWindow(new VideoMode(1000, 500), "SFML works!");
-            CircleShape shape = new CircleShape(100);
-            shape.FillColor = Color.Green;
-
             var rectangleShapes = new List<RectangleShape>();
             var textures = new TexturesDictionary(new TexturesConverter());
 
-            var position = new Vector2f(0, 100);
             foreach (var stationElenent in station.StationElements)
             {
                 var texture = textures.GetTexture(stationElenent);
@@ -50,13 +44,13 @@ namespace KolejarzCs
                 rectangleShapes.Add(rs);
             }
 
+            RenderWindow window = new RenderWindow(new VideoMode(station.Width * textures.TextureWidth, station.Height * textures.TextureHeight), "Station window");
             window.Closed += (s, a) => window.Close();
 
             while (window.IsOpen)
             {
                 window.DispatchEvents();
                 window.Clear();
-                window.Draw(shape);
                 rectangleShapes.ForEach(x => window.Draw(x));
                 window.Display();
             }

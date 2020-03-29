@@ -1,5 +1,4 @@
 ﻿using KolejarzCs.Station;
-using SFML.System;
 using System;
 using System.Collections.Generic;
 
@@ -24,8 +23,8 @@ namespace KolejarzCs.Parsers
                 throw new ArgumentException("First line in station file must be zero.");
             }
 
-            var height = int.Parse(readStation[index++]);
-            var width = int.Parse(readStation[index++]);
+            var height = uint.Parse(readStation[index++]);
+            var width = uint.Parse(readStation[index++]);
 
             var stationElements = new List<Element>();
 

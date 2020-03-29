@@ -6,14 +6,20 @@ namespace KolejarzCs.Graphics
 {
     class TexturesDictionary
     {
+        public uint TextureHeight { get; }
+
+        public uint TextureWidth { get; }
+
         private TexturesConverter converter;
 
         public TexturesDictionary(TexturesConverter converter)
         {
             this.converter = converter;
+            this.TextureHeight = 14;
+            this.TextureWidth = 14;
         }
 
-        public Texture GetTexture(ElementTypes type)
+        private Texture GetTexture(ElementTypes type)
         {
             var id = (int)type;
             string name;
@@ -29,7 +35,7 @@ namespace KolejarzCs.Graphics
             return converter.CreateTextureUsingColorArray(name);
         }
 
-        public Texture GetTexture(ElementTypes type, TrackStates state)
+        private Texture GetTexture(ElementTypes type, TrackStates state)
         {
             var name = $"TOR{(int)type}{(int)state}";
             return converter.CreateTextureUsingColorArray(name);
@@ -45,9 +51,9 @@ namespace KolejarzCs.Graphics
                 return GetTexture(stationElement.ElementType);
             }
 
-            if (stationElement is Track)
+            if (stationElement is Track trackElement)
             {
-                return GetTexture(stationElement.ElementType, TrackStates.ELECTRIC);
+                return GetTexture(trackElement.ElementType, trackElement.TrackState);
             }
 
             throw new ArgumentOutOfRangeException(nameof(stationElement), "Not supported station element.");
