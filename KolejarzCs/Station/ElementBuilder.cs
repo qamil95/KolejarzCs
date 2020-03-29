@@ -17,11 +17,19 @@ namespace KolejarzCs.Station
 
             if (this.IsTrackType(elementType))
             {
-                return new Track(coordinates, (ElementTypes)elementType);
+                if (this.IsTrackElectric(elementType))
+                {
+                    return new Track(coordinates, (ElementTypes)elementType, true);
+                }
+                else
+                    return new Track(coordinates, (ElementTypes)(elementType / 10), false);
+                
             }
 
             throw new ArgumentOutOfRangeException(nameof(type), "Matching element type not found.");
         }
+
+        bool IsTrackElectric(int x) => x < 100;
 
         bool IsDecorationType(int x) => x < 10;
 

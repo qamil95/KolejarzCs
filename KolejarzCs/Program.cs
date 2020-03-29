@@ -15,8 +15,8 @@ namespace KolejarzCs
         private static Vector2f textureSize = new Vector2f(14, 14);
 
         //private static string stationFile = @"C:\Gry\Kolejarz\Stacje\Bobowa Miasto\Bobowam.stc";
-        //private static string stationFile = @"C:\Gry\Kolejarz\Stacje\Bielsko Biała Gł\bbgl.stc";
-        private static string stationFile = @"C:\Gry\Kolejarz\Stacje\Warszawa Centralna\Warszawa.stc";
+        private static string stationFile = @"C:\Gry\Kolejarz\Stacje\Bielsko Biała Gł\bbgl.stc";
+        //private static string stationFile = @"C:\Gry\Kolejarz\Stacje\Warszawa Centralna\Warszawa.stc";
         //private static string stationFile = @"C:\Gry\Kolejarz\Stacje\Bobowa Miasto\Bobowam.stc";
 
 
@@ -33,7 +33,6 @@ namespace KolejarzCs
             RenderWindow window = new RenderWindow(new VideoMode(1000, 500), "SFML works!");
             CircleShape shape = new CircleShape(100);
             shape.FillColor = Color.Green;
-
 
             var rectangleShapes = new List<RectangleShape>();
             var textures = new TexturesDictionary(new TexturesConverter());
