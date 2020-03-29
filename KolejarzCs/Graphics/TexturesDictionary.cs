@@ -32,19 +32,19 @@ namespace KolejarzCs.Graphics
                 name = $"L{-id}";
             }
 
-            return converter.CreateTextureUsingColorArray(name);
+            return converter.LoadTexture(name);
         }
 
         private Texture GetTexture(ElementTypes type, TrackStates state)
         {
             var name = $"TOR{(int)type}{(int)state}";
-            return converter.CreateTextureUsingColorArray(name);
+            return converter.LoadTexture(name);
         }
 
         public Texture GetTexture(Element stationElement)
         {
             if (stationElement.ElementType == ElementTypes.EMPTY)
-                return converter.CreateWhiteTexture();
+                return converter.CreateTexture(Color.White);
 
             if (stationElement is Decoration)
             {

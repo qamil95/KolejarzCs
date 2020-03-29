@@ -13,10 +13,10 @@ namespace KolejarzCs
     {
         private static Vector2f textureSize = new Vector2f(14, 14);
 
-        private static string stationFile = @"C:\Gry\Kolejarz\Stacje\Bobowa Miasto\Bobowam.stc";
+        //private static string stationFile = @"C:\Gry\Kolejarz\Stacje\Bobowa Miasto\Bobowam.stc";
         //private static string stationFile = @"C:\Gry\Kolejarz\Stacje\Bielsko Biała Gł\bbgl.stc";
         //private static string stationFile = @"C:\Gry\Kolejarz\Stacje\Warszawa Centralna\Warszawa.stc";
-        //private static string stationFile = @"C:\Gry\Kolejarz\Stacje\Kraków Pł\2003\Krakow Plaszow 2003.stc";
+        private static string stationFile = @"C:\Gry\Kolejarz\Stacje\Wadowice\Wadowice2010.stc";
 
 
         // https://gist.github.com/trlewis/dbb709ecc88667714123
