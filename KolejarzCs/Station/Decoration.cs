@@ -4,11 +4,8 @@ namespace KolejarzCs.Station
 {
     class Decoration : Element
     {
-        private DecorationTypes decorationType;
-
-        public Decoration(Vector2i coordinates, DecorationTypes decorationType) : base (coordinates)
+        public Decoration(Vector2i coordinates, ElementTypes elementType) : base (coordinates, elementType)
         {
-            this.decorationType = decorationType;
         }
     }
 }

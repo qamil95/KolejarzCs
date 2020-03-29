@@ -109,12 +109,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="Station\DecorationTypes.cs" />
+    <Compile Include="Station\ElementTypes.cs" />
     <Compile Include="Station\Element.cs" />
+    <Compile Include="Station\ElementBuilder.cs" />
     <Compile Include="Station\Station.cs" />
     <Compile Include="Station\Decoration.cs" />
     <Compile Include="Station\TrackStates.cs" />
-    <Compile Include="Station\TrackTypes.cs" />
     <Compile Include="Parsers\StationParser.cs" />
     <Compile Include="Station\Track.cs" />
   </ItemGroup>

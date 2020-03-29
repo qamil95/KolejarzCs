@@ -11,10 +11,10 @@ namespace KolejarzCs.Station
             StationElements = stationElements;
         }
 
-        int Height { get; }
+        public int Height { get; }
 
-        int Width { get; }
+        public int Width { get; }
 
-        List<Element> StationElements { get; }
+        public List<Element> StationElements { get; }
     }
 }

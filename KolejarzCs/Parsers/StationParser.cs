@@ -7,6 +7,13 @@ namespace KolejarzCs.Parsers
 {
     class StationParser
     {
+        private readonly ElementBuilder elementBuilder;
+
+        public StationParser(ElementBuilder elementBuilder)
+        {
+            this.elementBuilder = elementBuilder;
+        }
+
         internal Station.Station Parse(List<string[]> readStation)
         {
             int lineIndex = 0;
@@ -26,28 +33,11 @@ namespace KolejarzCs.Parsers
             {
                 for (int x=0; x < width; x++)
                 {
-                    stationElements.Add(CreateStationElement(x, y, readStation[lineIndex][x]));
+                    stationElements.Add(elementBuilder.Create(x, y, readStation[lineIndex][x]));
                 }
             }
 
             return new Station.Station(height, width, stationElements);
-        }
-
-        private Element CreateStationElement(int x, int y, string type)
-        {
-            var coordinates = new Vector2i(x, y);
-
-            if (Enum.TryParse<DecorationTypes>(type, out var decorationType))
-            {
-                return new Decoration(coordinates, decorationType);
-            }
-
-            if (Enum.TryParse<TrackTypes>(type, out var trackType))
-            {
-                return new Track(coordinates, trackType);
-            }
-
-            throw new ArgumentOutOfRangeException(nameof(type), "Matching element type not found.");
         }
     }
 }

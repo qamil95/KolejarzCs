@@ -29,5 +29,20 @@ namespace KolejarzCs.Graphics
             image.Save(stm, System.Drawing.Imaging.ImageFormat.Bmp);
             return new Texture(stm);
         }
+
+        public Texture CreateWhiteTexture()
+        {
+            SFML.Graphics.Color[,] sfmlcolorarray = new SFML.Graphics.Color[14, 14];
+            for (int x = 0; x < 14; x++)
+            {
+                for (int y = 0; y < 14; y++)
+                {
+                    System.Drawing.Color csharpcolor = System.Drawing.Color.White;
+                    sfmlcolorarray[x, y] = new SFML.Graphics.Color(csharpcolor.R, csharpcolor.G, csharpcolor.B, csharpcolor.A);
+                }
+            }
+            SFML.Graphics.Image newimage = new SFML.Graphics.Image(sfmlcolorarray);
+            return new Texture(newimage);
+        }
     }
 }

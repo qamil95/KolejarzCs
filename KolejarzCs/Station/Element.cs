@@ -6,9 +6,12 @@ namespace KolejarzCs.Station
     {
         public Vector2i Coordinates;
 
-        public Element(Vector2i coordinates)
+        public ElementTypes ElementType;
+
+        public Element(Vector2i coordinates, ElementTypes elememtType)
         {
             Coordinates = coordinates;
+            ElementType = elememtType;
         }
     }
 }
