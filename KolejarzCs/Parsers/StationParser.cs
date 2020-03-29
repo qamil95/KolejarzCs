@@ -14,26 +14,26 @@ namespace KolejarzCs.Parsers
             this.elementBuilder = elementBuilder;
         }
 
-        internal Station.Station Parse(List<string[]> readStation)
+        internal Station.Station Parse(string[] readStation)
         {
-            int lineIndex = 0;
+            int index = 0;
 
-            var firstLine = int.Parse(readStation[lineIndex++][0]);
-            if (firstLine != 0)
+            var firstElement = int.Parse(readStation[index++]);
+            if (firstElement != 0)
             {
                 throw new ArgumentException("First line in station file must be zero.");
             }
 
-            var height = int.Parse(readStation[lineIndex++][0]);
-            var width = int.Parse(readStation[lineIndex++][0]);
+            var height = int.Parse(readStation[index++]);
+            var width = int.Parse(readStation[index++]);
 
             var stationElements = new List<Element>();
 
-            for (int y=0; y < height; y++, lineIndex++)
+            for (int y=0; y < height; y++)
             {
                 for (int x=0; x < width; x++)
                 {
-                    stationElements.Add(elementBuilder.Create(x, y, readStation[lineIndex][x]));
+                    stationElements.Add(elementBuilder.Create(x, y, readStation[index++]));
                 }
             }
 

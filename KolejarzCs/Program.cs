@@ -14,19 +14,21 @@ namespace KolejarzCs
     {
         private static Vector2f textureSize = new Vector2f(14, 14);
 
+        //private static string stationFile = @"C:\Gry\Kolejarz\Stacje\Bobowa Miasto\Bobowam.stc";
+        //private static string stationFile = @"C:\Gry\Kolejarz\Stacje\Bielsko Biała Gł\bbgl.stc";
+        private static string stationFile = @"C:\Gry\Kolejarz\Stacje\Warszawa Centralna\Warszawa.stc";
+        //private static string stationFile = @"C:\Gry\Kolejarz\Stacje\Bobowa Miasto\Bobowam.stc";
+
+
         // https://gist.github.com/trlewis/dbb709ecc88667714123
         // http://trlewis.net/hosting-an-sfml-renderwindow-inside-a-wpf-application/
 
         static void Main(string[] args)
         {
             var stationParser = new StationParser(new ElementBuilder());
-            var allLines = File.ReadAllLines(@"C:\Gry\Kolejarz\Stacje\Bobowa Miasto\Bobowam.stc");
-            var readStation = new List<string[]>();
-            foreach (var line in allLines)
-            {
-                readStation.Add(line.Split(new char [] {','}, StringSplitOptions.RemoveEmptyEntries));
-            }
-            var station = stationParser.Parse(readStation);
+            var allLines = string.Join(string.Empty, File.ReadAllLines(stationFile));
+            var splitStation = allLines.Split(new char [] {','});            
+            var station = stationParser.Parse(splitStation);
 
             RenderWindow window = new RenderWindow(new VideoMode(1000, 500), "SFML works!");
             CircleShape shape = new CircleShape(100);
